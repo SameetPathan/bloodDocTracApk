@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "blood-donation-app",
+    "name": "BloodDonTrac",
     "slug": "blood-donation-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logor.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sameetpathan.blooddonationapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "87b287cd-84ee-4287-81f0-71bd8c939395"
+      }
     }
   }
 }
