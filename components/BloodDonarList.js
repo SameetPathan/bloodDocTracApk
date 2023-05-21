@@ -40,15 +40,17 @@ function BloodDonarList({ navigation }) {
       const handleTrackPress = (location) => {
         const address = encodeURIComponent(location);
         const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${address}`;
+        const chromeUrl = `${mapsUrl}&t=m`;
       
-        Linking.canOpenURL(mapsUrl).then((supported) => {
+        Linking.canOpenURL(chromeUrl).then((supported) => {
           if (supported) {
-            Linking.openURL(mapsUrl);
+            Linking.openURL(chromeUrl);
           } else {
-            alert(`Cannot open Google Maps URL: ${mapsUrl}`);
+            alert(`Cannot open Google Maps URL: ${chromeUrl}`);
           }
         });
       };
+      
 
       const renderItem = ({ item }) => (
         <Card style={styles.card}>

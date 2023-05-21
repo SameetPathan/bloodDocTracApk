@@ -25,7 +25,7 @@
       "package": "com.sameetpathan.blooddonationapp"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logor.png"
     },
     "extra": {
       "eas": {

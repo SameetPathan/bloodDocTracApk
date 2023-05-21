@@ -12,7 +12,7 @@ import * as Location from 'expo-location';
 
 const Tab = createMaterialBottomTabNavigator();
 
-const UserProfile = () => {
+const UserProfile = ({navigation}) => {
 
   
   const [name, setName] = useState('');
@@ -30,6 +30,7 @@ const UserProfile = () => {
     if(locationlag){
       addDonarBLoodDetails(phone,name,bloodGroup,location,healthIssue,age,dob,locationlag,locationlat)
       addMarker(phone,bloodGroup,locationlag,locationlat)
+       navigation.navigate('User Dashboard');
     }
     else{
       alert("Unable to get Location ! try Again ")
